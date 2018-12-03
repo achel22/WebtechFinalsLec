@@ -43,11 +43,16 @@ function showScores() {
 
 // create questions
 var questions = [
-    new Question("what is PHP stands for?", ["A.Personal Homing Price", "B.Page Home Personal","C.President Houston Porque", "D.Personal Home Page"], "Personal Home Page"),
-    new Question("java script is commonly used in?", ["server side", "client side", "server", "all side"], "client side"),
-    new Question("what language is used in server side?", ["java", "html","rust", "css"], "java"),
-    new Question("Which language is used for web apps?", ["PHP", "Python", "Javascript", "All"], "All"),
-    new Question("the letter C stands for in the css?", ["cascading", "calibrating", "croping", "copping"], "cascading")
+    new Question("1. what does PHP stands for?", ["A.Personal Homing Price", "B.Page Home Personal","C.President Houston Porque", "D.Personal Home Page"], "D.Personal Home Page"),
+    new Question("2. What does HTML stands for?", ["A.HyperText Mark-up Language", "B.Hypertest Mark-up Lang", "C.HTML", "D.All of the above"], "A.HyperText Mark-up Language"),
+    new Question("3. Choose which language is used in server side?", ["A.Java", "B.HTML","C.Rust", "D.Css"], "A.Java"),
+    new Question("4. Which language is used for web apps?", ["A.PHP", "B.Python", "C.Javascript", "D.All"], "D.All"),
+    new Question("5.The letter C stands for in the css?", ["A.Cascading", "B.Calibrating", "C.Croping", "D.Copping"], "A.Cascading"),
+    new Question("6.what does PHP stands for?", ["A.Personal Homing Price", "B.Page Home Personal","C.President Houston Porque", "D.Personal Home Page"], "D.Personal Home Page"),
+    new Question("7.What does HTML stands for?", ["A.HyperText Mark-up Language", "B.Hypertest Mark-up Lang", "C.HTML", "D.All of the above"], "A.HyperText Mark-up Language"),
+    new Question("8.Choose which language is used in server side?", ["A.Java", "B.HTML","C.Rust", "D.Css"], "A.Java"),
+    new Question("9.Which language is used for web apps?", ["A.PHP", "B.Python", "C.Javascript", "D.All"], "D.All"),
+    new Question("10.The letter C stands for in the css?", ["A.Cascading", "B.Calibrating", "C.Croping", "D.Copping"], "A.Cascading")
 ];
 
 // create quiz
