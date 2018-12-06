@@ -4,7 +4,7 @@ session_start();
 require_once 'dbconnect.php';
 
 if ( isset($_SESSION['user'])!="" ) {
-	header("Location: quiz/quiz.php");
+	header("Location: quiz/index.php");
 	exit;
 }
 
@@ -37,11 +37,11 @@ if( isset($_POST['btn-login']) ) {
 
 	if (!$error) {
 		
-		$password = $pass;
+		$password = hash('sha256', $pass);
 		
-		$res=mysqli_query($conn, "SELECT userId, userName, userPass FROM users WHERE userEmail='$email'");
-		$row=$res->fetch_assoc();
-		$count = $res->num_rows;
+		$res=mysql_query("SELECT userId, userName, userPass FROM users WHERE userEmail='$email'");
+		$row=mysql_fetch_array($res);
+		$count = mysql_num_rows($res);
 		
 		if( $count == 1 && $row['userPass']==$password ) {
 			$_SESSION['user'] = $row['userId'];
